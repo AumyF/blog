@@ -7,9 +7,9 @@ export const PostLink: VFC<{
 }> = ({ post }) => {
   return (
     <div>
-      <h3 className="text-xl font-bold hover:underline">
+      <h3 className="text-xl font-bold ">
         <Link href={post.slug}>
-          <a>{post.title}</a>
+          <a className="hover:underline text-pink-400">{post.title}</a>
         </Link>
       </h3>
       <div className="ml-4">&mdash;{post.description}</div>
