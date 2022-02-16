@@ -25,6 +25,12 @@ const components: MDXComponents = {
     ></pre>
   ),
   ul: (props) => <ul {...props} className="pl-4 list-disc"></ul>,
+  blockquote: (props) => (
+    <blockquote
+      {...props}
+      className="pl-4 py-1 border-l-2 bg-zinc-800 border-zinc-600"
+    ></blockquote>
+  ),
 };
 
 export const BlogLayout: VFC<PropsWithChildren<{ metadata: Metadata }>> = ({
