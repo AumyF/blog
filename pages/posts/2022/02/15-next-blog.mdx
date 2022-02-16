@@ -88,7 +88,7 @@ export default ({ children }) => <BlogLayout metadata={metadata}>{children}</Blo
 };
 ```
 
-ここで `export default` されているコンポーネントは MDX コンテンツの wrapper としてはたらく。ブログ記事ページの詳細なレイアウトは `BlogLayout` に記述することになる。
+ここで `export default` されているコンポーネントは MDX コンテンツの wrapper としてはたらく。MDX はエディタサポートが貧弱でコンポーネント名や Tailwind のクラス名の補完が期待できないため、ブログ記事ページの詳細なレイアウトを `BlogLayout` に追い出すことで快適な記述を実現している。
 
 また、記事一覧のページを表示するために `getStaticProps` で記事の全データを取得する必要があるが、その場合は Dynamic Import `import()` で処理した。正直言ってなんでちゃんと動いているのかわからない、webpack 魔法すぎて怖い。
 
