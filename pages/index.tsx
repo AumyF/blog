@@ -25,10 +25,12 @@ export const getStaticProps: GetStaticProps<StaticProps> = async () => {
           throw new Error(`${JSON.stringify(metadata)} is not valid metadata`);
         }
         const day = file.replace(/\.mdx$/, "");
-        posts.push({ ...metadata, slug: `./posts/${year}/${month}/${day}` });
+        posts.push({ ...metadata, slug: `/posts/${year}/${month}/${day}` });
       }
     }
   }
+
+  posts.reverse();
 
   return { props: { posts } };
 };
