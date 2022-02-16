@@ -11,6 +11,7 @@ const components: MDXComponents = {
       className="text-3xl font-bold pb-2 mb-2 mt-4 border-b border-zinc-600"
     ></h1>
   ),
+  h2: (props) => <h2 {...props} className="text-2xl font-bold mb-4 mt-4"></h2>,
   a: (props) => (
     <a
       {...props}
