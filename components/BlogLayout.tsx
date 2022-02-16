@@ -19,7 +19,10 @@ const components: MDXComponents = {
   ),
   p: (props) => <p {...props} className="my-4"></p>,
   pre: (props) => (
-    <pre {...props} className="p-4 shadow bg-zinc-800 rounded"></pre>
+    <pre
+      {...props}
+      className="p-4 shadow bg-zinc-800 rounded overflow-x-auto"
+    ></pre>
   ),
   ul: (props) => <ul {...props} className="pl-4 list-disc"></ul>,
 };
