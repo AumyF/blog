@@ -39,7 +39,7 @@ const Home: NextPage<StaticProps> = ({ posts }) => {
   return (
     <Layout>
       <Head>
-        <title>GyakubaricEffects</title>
+        <title>blog.fuku.day</title>
         <meta name="description" content="Aumyのブログ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
