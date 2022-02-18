@@ -47,7 +47,7 @@ export const BlogLayout: VFC<PropsWithChildren<{ metadata: Metadata }>> = ({
     </Head>
     <div className="flex flex-col gap-4">
       <h1 className="text-4xl font-bold">{metadata.title}</h1>
-      <article>
+      <article className="blog-contents">
         <MDXProvider components={components}>{children}</MDXProvider>
       </article>
     </div>

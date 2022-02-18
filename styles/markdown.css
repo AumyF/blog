@@ -1,0 +1,10 @@
+.blog-contents {
+  :not(pre) code {
+    @apply bg-zinc-800 py-1 border-zinc-700 border rounded;
+    &::before,
+    &::after {
+      content: "`";
+      display: inline;
+    }
+  }
+}
