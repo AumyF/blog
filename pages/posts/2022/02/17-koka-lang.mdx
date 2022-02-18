@@ -8,8 +8,7 @@ export const metadata = {
 
 Koka は Microsoft Research というところで開発されている研究用言語で，「こうか」と読みます．最初はコカの実とかのもじりかと思っていたんですがそうではなく，なんと日本語の「効果」に由来するらしいです．
 
-> Koka is a function-oriented language that separates pure values from side-effecting computations (**The word ‘kōka’ (or 効果) means “effect” or “effective” in Japanese**).
-> https://koka-lang.github.io/koka/doc/book.html#tour (強調は筆者による)
+> Koka is a function-oriented language that separates pure values from side-effecting computations (**The word ‘kōka’ (or 効果) means “effect” or “effective” in Japanese**). <br /> [A Tour of Koka](https://koka-lang.github.io/koka/doc/book.html#tour) (強調は筆者による)
 
 # インストール
 
@@ -110,7 +109,7 @@ while_(
 );
 ```
 
-のようにあらわされることになります^[実際の JavaScript ではアロー関数やインクリメントを駆使してもっと短く書けるが，Koka との対応性を優先してこのように書いている]．
+のようにあらわされることになります(実際の JavaScript ではアロー関数やインクリメントを駆使してもっと短く書けるが，Koka との対応性を優先してこのように書いている)．
 
 実は，引数のない無名関数 `fn(){}` は `{}` と略記できます．
 
@@ -339,7 +338,7 @@ fun main()
 
 あー，ちょっと待ってくれ，えーっと？ `handle` の後にあるのがエフェクトを起こす可能性があるブロックで，そこで発生した `log` に詰まった値を `log(value)` でパターンマッチのようにして分解している．
 
-Algebraic effects のハンドラはこんな感じになりがちだが，「エフェクトを起こす可能性があるブロック」が変な位置にある^[実は `match 値 パターン` と同じ形をしているのだが，値の位置にブロックという長くなりうる物体が置かれるので読みづらいのだと思う．たぶん]おかげか普通に読みづらく algebraic effects の理解を妨げている感がある，と私は勝手に思っています．そこで Koka が誇る新構文 `with handler` を登場させましょう．
+Algebraic effects のハンドラはこんな感じになりがちだが，「エフェクトを起こす可能性があるブロック」が変な位置にある(実は `match 値 パターン` と同じ形をしているのだが，値の位置にブロックという長くなりうる物体が置かれるので読みづらいのだと思う．たぶん)おかげか普通に読みづらく algebraic effects の理解を妨げている感がある，と私は勝手に思っています．そこで Koka が誇る新構文 `with handler` を登場させましょう．
 
 `with handler` 構文を使うと「エフェクトを起こす可能性があるブロック」を `with` のように後ろに持ってこれます．こうすると「囲む」感はあまりないです．
 
@@ -382,7 +381,7 @@ fun main()
 
 ## ハンドラを差し替える
 
-ここで，ログを標準出力の代わりにファイルで書き込みたくなった^[標準出力をリダイレクトすればいいのではないかというツッコミはなしでお願いします]とする．そのような場合もハンドラを差し替えれば:
+ここで，ログを標準出力の代わりにファイルで書き込みたくなった(標準出力をリダイレクトすればいいのではないかというツッコミはなしでお願いします)とする．そのような場合もハンドラを差し替えれば:
 
 ```text
 import std/os/file
