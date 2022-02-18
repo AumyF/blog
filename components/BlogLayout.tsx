@@ -3,6 +3,7 @@ import { PropsWithChildren, VFC } from "react";
 import { Metadata } from "../types/post";
 import { Layout } from "./Layout";
 import type { MDXComponents } from "mdx/types";
+import Head from "next/head";
 
 const components: MDXComponents = {
   h1: (props) => (
@@ -39,6 +40,11 @@ export const BlogLayout: VFC<PropsWithChildren<{ metadata: Metadata }>> = ({
   metadata,
 }) => (
   <Layout>
+    <Head>
+      <title>{metadata.title} - blog.fuku.day</title>
+      <meta name="description" content={metadata.description} />
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
     <div className="flex flex-col gap-4">
       <h1 className="text-4xl font-bold">{metadata.title}</h1>
       <article>
