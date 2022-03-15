@@ -62,3 +62,20 @@ fn strto_test() {
 `iter.peekable()` を使って実装しているというツイートを見かけたのではじめは peekable を使っていたのだが、最終的には普通に `for` で回すだけになった。途中でイキって `while let Some((i, byte)) in iter.next()` というアホのコードを書いていたところが反省点。
 
 2022 年は多少不恰好でも動くコードを書こうということを(今さっき)目標に据えた。下手に `try_fold` を駆使せず素直に可変状態を扱ったのは大きな成長だが、`while let` がそれを潰して有り余るほどアホなのでまあアレという感じ。
+
+# 追記
+
+と思ったのだが、寝て起きたらやっぱりスマートに書きたくなってメソッドを探してしまった。やれやれ
+
+```rust
+fn str_to_fromstr<F: FromStr>(str: &str) -> Result<(F, &str), F::Err> {
+    let index = str
+        .bytes()
+        .position(|byte| !byte.is_ascii_digit())
+        .unwrap_or(str.len());
+
+    let (digit_part, remaining_part) = str.split_at(index);
+
+    digit_part.parse().map(|value| (value, remaining_part))
+}
+```
