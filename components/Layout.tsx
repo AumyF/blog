@@ -8,9 +8,9 @@ export const Layout: VFC<PropsWithChildren<{}>> = ({ children }) => (
       <main className="max-w-screen-lg w-full">{children}</main>
     </div>
     <footer className="flex  justify-center">
-      <div className="max-w-screen-lg w-full border-t border-zinc-600 p-4 text-right">
+      <div className="max-w-screen-lg w-full border-t border-zinc-600 py-4 text-right">
         <div>&copy; 2022 Aumy</div>
-        <div>Posts are licensed under CC-BY-SA 4.0</div>
+        <div>Posts are licensed under CC BY-SA 4.0</div>
       </div>
     </footer>
   </div>
