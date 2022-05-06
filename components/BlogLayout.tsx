@@ -23,7 +23,7 @@ const components: MDXComponents = {
       style={palt}
     ></a>
   ),
-  p: (props) => <p {...props} className="my-4"></p>,
+  p: (props) => <p {...props} className="my-4 text-justify"></p>,
   pre: (props) => (
     <pre
       {...props}
