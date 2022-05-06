@@ -41,7 +41,7 @@ export const BlogLayout: VFC<PropsWithChildren<{ metadata: Metadata }>> = ({
 }) => (
   <Layout>
     <Head>
-      <title>{metadata.title} - blog.fuku.day</title>
+      <title>{metadata.title} - GyakubaricEffects</title>
       <meta name="description" content={metadata.description} />
       <link rel="icon" href="/favicon.ico" />
     </Head>
