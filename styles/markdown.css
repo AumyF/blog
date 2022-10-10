@@ -8,3 +8,8 @@
     }
   }
 }
+
+.footnotes {
+  @apply border-zinc-700 border-t;
+  font-size: 0.9em;
+}

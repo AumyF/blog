@@ -31,6 +31,8 @@ const components: MDXComponents = {
     ></pre>
   ),
   ul: (props) => <ul {...props} className="pl-4 list-disc"></ul>,
+  ol: (props) => <ol {...props} className="pl-4 list-decimal"></ol>,
+  hr: (props) => <hr {...props} className="border-zinc-600" />,
   blockquote: (props) => (
     <blockquote
       {...props}
