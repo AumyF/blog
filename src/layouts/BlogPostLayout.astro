@@ -1,0 +1,62 @@
+---
+// We have to import BaseHtml first to make styles of components work properly
+import BaseHtml from "./BaseHtml.astro";
+import Header from "../components/specific/Header.astro";
+import Main from "../components/specific/Main.astro";
+import Stack from "../components/primitive/Stack.astro";
+
+interface Props {
+  frontmatter: {
+    title: string;
+    synopsis: string;
+  };
+}
+
+const { title } = Astro.props.frontmatter;
+---
+
+<BaseHtml title={title}>
+  <Header />
+  <Main>
+    <Stack gap={0}>
+      <h1>{title}</h1>
+      <article>
+        <slot />
+      </article>
+    </Stack>
+  </Main>
+</BaseHtml>
+
+<style>
+  h1 {
+    font-size: 2em;
+  }
+  article {
+    font-feature-settings: "palt" 1;
+    letter-spacing: 0.05em;
+  }
+  article :global(h1) {
+    font-size: 2em;
+    border-bottom: 1px solid var(--border);
+  }
+  article :global(h2) {
+    font-size: 1.5em;
+  }
+  article :global(p) {
+    margin-block: var(--s0);
+    text-align: justify;
+  }
+  article :global(hr) {
+    margin-block: var(--s0);
+    border-top: 1px solid var(--border);
+  }
+  article :global(ul,ol) {
+    padding-left: var(--s1);
+  }
+  article :global(ul) {
+    list-style: disc;
+  }
+  article :global(ol) {
+    list-style: decimal;
+  }
+</style>

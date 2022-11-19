@@ -1,0 +1,24 @@
+---
+import CenteredColumn from "../primitive/CenteredColumn.astro";
+---
+
+<header>
+  <CenteredColumn maxWidth={64}>
+    <div class="inner">
+      <h1><a href="/">GyakubaricEffects (仮)</a></h1>
+    </div>
+  </CenteredColumn>
+</header>
+
+<style>
+  .inner {
+    border-bottom: 1px solid var(--border);
+  }
+  h1 {
+    font-size: 1.75em;
+  }
+  h1 a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
