@@ -1,0 +1,18 @@
+---
+interface Props {
+  /** By modular-scaled space */
+  length: number;
+}
+
+const { length } = Astro.props;
+const lengthVar = `calc(0px - var(--s${length}))`;
+---
+
+<div class="MoveUp">
+  <slot />
+</div>
+<style define:vars={{ lengthVar }}>
+  .MoveUp {
+    margin-top: var(--lengthVar);
+  }
+</style>

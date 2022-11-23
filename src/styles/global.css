@@ -1,0 +1,45 @@
+:root {
+  --ratio: 1.75;
+  line-height: var(--ratio);
+
+  /* TODO: Use pow() when all modern browsers support it */
+  --s-5: calc(var(--s4) / var(--ratio));
+  --s-4: calc(var(--s3) / var(--ratio));
+  --s-3: calc(var(--s2) / var(--ratio));
+  --s-2: calc(var(--s1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  font-family: sans-serif;
+
+  --bg: #111;
+  --fg: #ddd;
+  --border: #444;
+
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+a {
+  color: oklch(75% 0.2 0);
+  text-decoration: underline 1px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+::selection {
+  background-color: var(--fg);
+  color: var(--bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+}

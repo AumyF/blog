@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  synopsis: string;
+  relativeUrl: string;
+}
+
+const { title, synopsis, relativeUrl } = Astro.props;
+---
+
+<div>
+  <span>{relativeUrl.replace(/^\/posts\//, "")}</span>
+  <h3 class="title"><a href={relativeUrl}>{title}</a></h3>
+  <div>{synopsis}</div>
+</div>
+
+<style> 
+
+h3.title {
+  font-size: 1.25em;
+}
+</style>

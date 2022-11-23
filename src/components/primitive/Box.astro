@@ -1,0 +1,15 @@
+---
+interface Props {
+  padding: number;
+  background: string;
+  border: string;
+}
+
+const { padding } = Astro.props;
+---
+
+<div class="box"><slot /></div><style>
+  .box {
+    padding: var(--s${padding});
+  }
+</style>

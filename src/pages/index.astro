@@ -1,0 +1,42 @@
+---
+import BaseHtml from "../layouts/BaseHtml.astro";
+import Header from "../components/specific/Header.astro";
+import Main from "../components/specific/Main.astro";
+import PostLink from "../components/specific/PostLink.astro";
+import Stack from "../components/primitive/Stack.astro";
+
+const posts = (await Astro.glob("./posts/**/*.md")).reverse();
+---
+
+<BaseHtml title="Index">
+  <Header />
+  <main>
+    <Main>
+      <Stack gap={1}>
+        <h1 class="title">Index</h1>
+        <Stack gap={1}>
+          {
+            posts.map((post) => (
+              <PostLink
+                title={post.frontmatter.title}
+                synopsis={post.frontmatter.synopsis}
+                relativeUrl={
+                  post.url ??
+                  (() => {
+                    throw new Error(`url of ${post.file} is undefined`);
+                  })()
+                }
+              />
+            ))
+          }
+        </Stack>
+      </Stack>
+    </Main>
+  </main>
+</BaseHtml>
+
+<style>
+  h1.title {
+    font-size: 2em;
+  }
+</style>

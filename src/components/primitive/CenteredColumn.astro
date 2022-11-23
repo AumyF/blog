@@ -1,0 +1,22 @@
+---
+interface Props {
+  maxWidth: number;
+}
+
+const { maxWidth } = Astro.props;
+
+const maxWidthMSS = `calc(${maxWidth}em + var(--s1) * 2)`;
+---
+
+<div class="CenteredColumn">
+  <slot />
+</div>
+
+<style define:vars={{ maxWidthMSS }}>
+  .CenteredColumn {
+    max-width: var(--maxWidthMSS);
+    padding-inline: var(--s1);
+    margin-inline: auto;
+    width: 100%;
+  }
+</style>

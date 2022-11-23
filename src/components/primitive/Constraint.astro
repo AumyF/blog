@@ -1,0 +1,17 @@
+---
+interface Props {
+  /** By `em` */
+  maxWidth: number;
+}
+
+const { maxWidth } = Astro.props;
+const maxWidthEm = `${maxWidth}em`;
+---
+
+<div class="Constraint"><slot /></div>
+
+<style define:vars={{ maxWidthEm }}>
+  .Constraint {
+    max-width: var(--maxWidthEm);
+  }
+</style>

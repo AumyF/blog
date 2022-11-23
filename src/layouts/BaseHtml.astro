@@ -1,0 +1,37 @@
+---
+import "destyle.css";
+import CenteredColumn from "../components/primitive/CenteredColumn.astro";
+import Stack from "../components/primitive/Stack.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+}
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{`${Astro.props.title} - GyakubaricEffects`}</title>
+  </head>
+  <body>
+    <Stack gap={1}>
+      <slot />
+      <footer>
+        <CenteredColumn maxWidth={64}>
+          <div class="inner">&copy; 2022 Aumy</div>
+        </CenteredColumn>
+      </footer>
+    </Stack>
+    <style>
+      footer {
+        text-align: right;
+      }
+      footer .inner {
+        padding-block: var(--s0);
+        border-top: 1px solid var(--border);
+      }
+    </style>
+  </body>
+</html>
