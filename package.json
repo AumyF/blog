@@ -7,15 +7,15 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^1.6.2",
+    "astro": "^1.8.0",
     "destyle.css": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "17.0.31",
-    "eslint": "8.24.0",
-    "postcss": "^8.4.17",
+    "@types/node": "18.11.18",
+    "eslint": "8.30.0",
+    "postcss": "^8.4.20",
     "postcss-preset-env": "^7.8.3",
-    "prettier": "^2.7.1",
-    "typescript": "4.7.3"
+    "prettier": "^2.8.1",
+    "typescript": "4.9.4"
   }
 }
