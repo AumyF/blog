@@ -5,7 +5,7 @@ import Main from "../components/specific/Main.astro";
 import PostLink from "../components/specific/PostLink.astro";
 import Stack from "../components/primitive/Stack.astro";
 
-const posts = (await Astro.glob("./posts/**/*.md")).reverse();
+const posts = (await Astro.glob("./posts/**/*.{md,astro}")).reverse();
 ---
 
 <BaseHtml title="Index">

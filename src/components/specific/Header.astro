@@ -5,7 +5,8 @@ import CenteredColumn from "../primitive/CenteredColumn.astro";
 <header>
   <CenteredColumn maxWidth={64}>
     <div class="inner">
-      <h1><a href="/">GyakubaricEffects (仮)</a></h1>
+      <h1><a href="/">GyakubaricEffects</a></h1>
+      <div class="subtitle">Sailer-Fuku, Functional Programming, Post-Apocalypse</div>
     </div>
   </CenteredColumn>
 </header>
@@ -13,6 +14,9 @@ import CenteredColumn from "../primitive/CenteredColumn.astro";
 <style>
   .inner {
     border-bottom: 1px solid var(--border);
+  }
+  .subtitle {
+    font-size: 0.875em;
   }
   h1 {
     font-size: 1.75em;
