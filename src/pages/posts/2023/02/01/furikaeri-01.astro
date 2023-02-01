@@ -1,0 +1,225 @@
+---
+import BlogPostLayout from "../../../../../layouts/BlogPostLayout.astro";
+export const frontmatter = {
+  title: "2023-01 振り返り",
+  synopsis: "ツイッターで暴れるのはやめましょう",
+};
+---
+
+<BlogPostLayout frontmatter={frontmatter}>
+  <p>
+    ワーッワーッワーッ！！2023年あけましておめでとうございますとか言ってダラダラしていたら1年の8.33%が終わってしまっています！！！
+  </p>
+  <h1>抱負振り返り</h1>
+  <ul>
+    <li>パスポート…作った</li>
+    <li>ギター…週2以上は触ってそうだけど週4は触ってない気がする</li>
+    <li>Duolingo…下旬に破滅した</li>
+    <li>OSSコントリビュート…してない</li>
+    <li>linderaのWasm binding…不要説出てきた</li>
+    <li>cycle-restartのフォーク…やった、作業中</li>
+    <li>
+      Cycle.jsのテンプレート…作った<ul>
+        <li>
+          <a href="https://github.com/aumyf/cyclejs-templates"
+            >aumyf/cyclejs-templates</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li>Nihera…スラッシュコマンド化してキューも作った</li>
+    <li>Julia…入門した</li>
+    <li>機械学習の仕組みを学ぶ…ゼロつく買って積んだ</li>
+    <li>日報…たまに抜ける</li>
+    <li>月報…今書いてる</li>
+    <li>週1回以上外出る…たぶんできてる</li>
+    <li>オブジェクト指向UIデザイン…ちょっと読んだ</li>
+    <li>知見共有プラットフォーム…手をつけたがVueにキレていた</li>
+    <li>自作言語…実装はじめようとした</li>
+    <li>RISC-V Chisel本…買って読みはじめた</li>
+  </ul>
+  <p>微妙！！！！しかし進んではいる気がする。振り返りって大事ですね。</p>
+  <h1>その他やったこと</h1>
+  <h2>WebGPU</h2>
+  <p>
+    Helixのサポート言語一覧にWGSLなる言語を見つけたことからWebGPUなるものに興味を持った。WebブラウザにGPUを扱えるAPIを生やしてWebアプリケーションから使えるようにしようぜというやつらしいが、ブラウザ外でも使えるクロスプラットフォームな仕様になる可能性とかもあるらしい。WebAssemblyといいWebブラウザで○○をやるという名目でクロスプラットフォーム大統一規格を制定しようとするの流行ってるのか？
+  </p>
+  <p>
+    ところでRustにはそのWebGPUをもとにしたwgpuというクレートがあり (<a
+      href="https://zenn.dev/matcha_choco010/articles/2022-07-05-rust-graphics-wgpu"
+      >Rustのグラフィクス周りメモ/wgpuとその使い方 - Zenn</a
+    >とか見ろ)、いろいろができるらしいので、Twitterで見かけたブログ記事を<a
+      href="https://github.com/aumyf/wgpu-image-filters">写経してみた</a
+    >。
+  </p>
+  <p>
+    ちなみに<a href="https://github.com/gpuweb/gpuweb/issues/566"
+      >WGSLはカスだという主張も存在する</a
+    >ようだ。GPUに詳しい人どういうことか教えてほしい。
+  </p>
+  <h2>靴</h2>
+  <p>
+    ちょい高な靴でも買うか〜という気持ちになったのでOn
+    Cloud5を買った。問題意識としては、手持ちの靴がクラシックスニーカー
+    (であってる？)
+    的な見た目がオシャレめなやつと真っ黒な運動靴っぽい見た目のやつに別れている状態で
+    <ul>
+      <li>
+        運動靴は楽さに全振りしてキャタピラン (数珠みたいな結ばないゴムのやつ)
+        だが、オシャレなほうの靴はふつうの紐なのでUXが終わってる
+      </li>
+      <li>
+        オシャレなほうはあんま履かないのでそこまで汚れてないが、運動靴は高校3年+1年履いてて汚れと磨り減りがひどい
+      </li>
+    </ul>
+    というようなトレードオフがあることから出かける際に余計な迷いが生じておりダルいというのがあり、歩きやすくて見た目がそれなりに良いやつを買ってターンエンドしたいというのがあった。
+  </p>
+  <p>
+    Twitterに「filter:follows スニーカー」とかいう舐めたクエリを突っ込んだ結果
+    ゴム紐で (少なくとも俺の感性から見て)
+    それなりにデザインよくて歩きやすいという触れ込みで紹介されていた。
+  </p>
+  <p>
+    実際店に行って履いたら土踏まず横がやや狭いがかなり歩きやすく、どれくらい歩きやすいかというと運動靴のほうのクッション性が0に思えるぐらい歩きやすく、これ体験した後でこのクッション性0の靴で帰るの無理だな〜となってしまい金出してしまった。やや狭いのは慣れてきたというか、靴が伸びたというべきか。むしろ扁平足が矯正されていいのではないかという気がしている
+    (扁平足は凄まじい速度で足首が死ぬ)。
+  </p>
+  <p>
+    問題としては高いので雑に扱えないし履いてて気を遣う。15000円ぐらいが限界らしい。
+  </p>
+  <h1>プレイリスト</h1>
+  <p>今月発見した曲とかアーティストをリスト化する企画。</p>
+  <p>
+    ぼっち・ざ・ろっく！の影響でサイケデリックロックに若干興味を持ってシューゲイザー/ドリームポップに辿り着いた。
+  </p>
+  <h2>繋ぐ日の青 / For Tracy Hyde</h2>
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/5pGZs7SwXzICfbboT7soBP?utm_source=generator"
+    width="50%"
+    height="152"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"></iframe>
+  <p>
+    <ul>
+      <li>サビのハモりのキラキラ感</li>
+      <li>歌詞がアオハルすぎて後藤ひとりが聴いたら卒倒しそう</li>
+    </ul>
+  </p>
+  <h2>Leave The Planet / For Tracy Hyde</h2>
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/3QJGdGTuSpBCbd6r99vEH6?utm_source=generator"
+    width="50%"
+    height="152"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"></iframe>
+  <p>
+    <ul>
+      <li>こっちは後藤ひとりっぽい</li>
+    </ul>
+  </p>
+  <h2>drunker / Fennel</h2>
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/1K4XC2ojXq2uSGXdWhrOzK?utm_source=generator"
+    width="50%"
+    height="152"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"></iframe>
+  <p>
+    <ul>
+      <li>神イントロ</li>
+      <li>実はスネアってバンバカ鳴ってたほうがよくて、</li>
+    </ul>
+  </p>
+  <h2>アンドロイド / tricot</h2>
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/1k3hdwtmjxdBUL6osBVsFL?utm_source=generator"
+    width="50%"
+    height="152"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"></iframe>
+  <p><ul><li>すきだな〜</li></ul></p>
+  <h2>リレイ / 伊根</h2>
+  <iframe
+    width="312"
+    height="176"
+    src="https://ext.nicovideo.jp/thumb/sm41604528"
+    style="border:solid 1px #ccc;"
+    ><a href="https://www.nicovideo.jp/watch/sm41604528">リレイ / 伊根 feat.
+    裏命</a></iframe
+  >
+  <p>
+    <ul><li>毎度毎度ギターがよすぎるんだよな</li></ul>
+  </p>
+  <h2>フロートプレイ / 稲葉曇</h2>
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/2T7Yky4Kmlq1xkY2paZVm9?utm_source=generator"
+    width="50%"
+    height="152"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"></iframe>
+  <p>
+    <ul>
+      <li>テロリラ……(劇強エコー)テロリラ……(劇強エコー)好きすぎる</li>
+      <li>2番サビ後の少しずつブチ上がって大サビに突入していくの最高すぎる</li>
+      <li>ときどき挟まるハンドクラップ様のパーカッション好き</li>
+      <li>フェードアウト最高〜〜〜</li>
+      <li>総じてスルメ</li>
+    </ul>
+  </p>
+  <h2>スパークルダンサー / フレデリック</h2>
+  <iframe
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/4fMj0cYyIkt4y1rkFYAvdg?utm_source=generator"
+    width="50%"
+    height="152"
+    allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"></iframe>
+  <p><ul><li>おい、踊れよ</li></ul></p>
+  <hr />
+  <p>
+    今月のMVPはFor Tracy
+    Hydeですね、シューゲイザー良すぎて自作言語の名前にしそう。ところで今書いてて知ったんだけど
+    <figure>
+      <blockquote>
+        For Tracy Hydeは3月25日（土）渋谷WWWXでのライブを以て解散いたします。
+      </blockquote>
+      <figcaption>
+        <cite
+          ><a
+            href="https://twitter.com/ForTracyHyde/status/1610954388889010176?s=20"
+            >https://twitter.com/ForTracyHyde/status/1610954388889010176?s=20</a
+          >
+        </cite>
+      </figcaption>
+    </figure>
+    エ〜〜〜〜〜〜〜〜〜〜〜ッ！？！？！？！？
+  </p>
+  <h1>2月やること</h1>
+  <h2>Parol</h2>
+  <p>
+    2月は間違いなくParolの月にする。Parol (<a
+      href="https://github.com/jsinger67/parol/">jsinger67/parol</a
+    >) というのはRust向けのパーサジェネレータ。<a
+      href="https://zenn.dev/ryo33/articles/26f87f776b4bfa"
+      >Parolというパーサ生成ツールがすごい - Zenn</a
+    >とか見てもらうとわかるかもしれない。これで自作最強言語を実装する……前にもうちょっと簡単なネタ言語を作りたい。「これ言うと怒られるかもしれないんだけど、」「知らんけど」とかでプログラミングできる言語を作ろうかな。
+  </p>
+  <h2>記事蓄積</h2>
+  <p>
+    読んだ記事の振り返りとかできる君をつくりたい。Notionでやれ感はなくもないが……
+  </p>
+  <h2>放送大学</h2>
+  <p>出願しろ</p>
+  <h2>COVID-19 ワクチン</h2>
+  <p>打て</p>
+</BlogPostLayout>
