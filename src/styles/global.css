@@ -17,16 +17,29 @@
 
   font-family: sans-serif;
 
-  --bg: #111;
-  --fg: #ddd;
-  --border: #444;
+  color-scheme: light;
+
+  --bg: #fff;
+  --fg: #444;
+  --border: #e0e0e0;
+  --accent: oklch(55% 0.2 0);
 
   background-color: var(--bg);
   color: var(--fg);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #111;
+    --fg: #ddd;
+    --border: #444;
+    --accent: oklch(75% 0.2 0);
+  }
+}
+
 a {
-  color: oklch(75% 0.2 0);
+  color: var(--accent);
   text-decoration: underline 1px;
 }
 
