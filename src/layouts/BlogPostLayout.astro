@@ -32,8 +32,7 @@ const { title } = Astro.props.frontmatter;
     font-size: 2em;
   }
   article {
-    font-feature-settings: "palt" 1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
   }
   article :global(h1) {
     font-size: 2em;
@@ -60,5 +59,9 @@ const { title } = Astro.props.frontmatter;
   }
   article :global(ol) {
     list-style: decimal;
+  }
+  article :global(blockquote) {
+    padding-inline-start: var(--s0);
+    border-inline-start: 1px solid var(--border);
   }
 </style>
