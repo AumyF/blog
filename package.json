@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "astro": "^1.8.0",
@@ -15,7 +16,7 @@
     "eslint": "8.47.0",
     "postcss": "^8.4.28",
     "postcss-preset-env": "^9.1.1",
-    "prettier": "^2.8.1",
+    "prettier": "^2.8.8",
     "typescript": "5.2.2"
   }
 }
