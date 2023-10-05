@@ -105,7 +105,7 @@ while_(
   function () {
     console.log("hello!");
     i = i + 1;
-  }
+  },
 );
 ```
 
