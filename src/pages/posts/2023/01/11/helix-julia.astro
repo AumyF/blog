@@ -1,0 +1,51 @@
+---
+import BlogPostLayout from "../../../../../layouts/BlogPostLayout.astro";
+
+export const frontmatter = {
+  title: "Helix EditorでJuliaのLanguage Serverをセットアップする",
+  synopsis:
+    "新興と新興を組み合わせているがなんとかなっている。Language serverさまさまである",
+};
+---
+
+<BlogPostLayout frontmatter={frontmatter}>
+  <section>
+    <h1>まえがき</h1>
+    <p>
+      最近はHelix
+      Editorをたくさん使っていこうという気持ちが高まっているためいろいろな開発で使ってみている。
+    </p>
+    <p>
+      初見の人のために説明しておくとHelixはVimのようなターミナルで動作するモーダルエディタで、ファイルピッカーやLanguage
+      Server
+      Protocolクライアント、Tree-sitterといった便利機能がビルトインで搭載されている
+      (というかまだプラグインシステムがない)
+      ため設定が楽で、かなりすぐ使い始められる。操作体系はKakouneというエディタの影響が強く、テキスト操作対象を先に選択するようになっている。実装言語はみんな大好きRust。そのうち入門記事を書きたさがある。
+    </p>
+    <p>
+      ちなみにAstroのlanguage
+      serverがちゃんと動かないためこの記事はHelixではなくNeovimで書いている。若すぎるのはAstroかHelixか。こういう話をすると「バージョンが0.12とかなんでしょ？笑」とか聞かれそうだが、実際は最新版は22.12である。わかりやすくてよろしい。
+    </p>
+
+    <p>
+      Juliaはスクリプト言語みたいな構文でC言語みたいなパフォーマンスを出したいよねっていう欲張りな言語。スクリプトに気持ちのあるオタクとしては気になるところである。あと最近は機械学習にもようやく興味が出てきたのでそのへんの界隈で一番モダァンな言語を選んでいるという側面もある。ただ既存のモデルを使うとかだとTensorflow
+      or Pytorchが不可避でPythonから逃れられなさそうなんだが……。
+    </p>
+  </section>
+  <section>
+    <h1>本文</h1>
+    <p>
+      さて、Helixは<a href="https://docs.helix-editor.com/lang-support.html"
+        >公式ドキュメントのLanguage Supportページ</a
+      >から対応言語とlanguage server一覧が読める (<strong>F#がない!!</strong
+      >)。Juliaは <code>julia</code> という謎のサーバーになっているが、これはなんとJulia処理系という意味である。なんか知らんがJuliaのlanguage
+      serverはそれ自体がJuliaライブラリであり、パッケージを読み込んで起動するコードをJulia処理系に渡すことでlanguage
+      serverとして機能させる。
+    </p>
+    <p>ここで、なぜか</p>
+  </section>
+  <hr />
+  <ol>
+    <li>F# がない!!</li>
+  </ol>
+</BlogPostLayout>
