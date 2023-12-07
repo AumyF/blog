@@ -8,7 +8,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "astro": "^3.2.3",
+    "astro": "^4.0.3",
     "destyle.css": "^4.0.0"
   },
   "devDependencies": {
