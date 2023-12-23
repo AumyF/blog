@@ -41,7 +41,6 @@ QEMUを使う場合フルシステムエミュレーションとユーザーモ�
 ❯ sudo pacman -S spike
 ```
 
-
 riscv-pkリポジトリをクローンする。treeを浅く取る。
 
 ```shell
@@ -84,7 +83,6 @@ RISC-Vプログラムを実行するには `spike <PKへのパス> <実行ファ
 以下は階乗を求めるプログラムです[^shiki]。ウワー！非構造化プログラミング[^unstructural]！
 
 [^unstructural]: `loop` ラベルを使うことに思い至らず `j fact` した結果無限ループに陥って2時間ぐらい頭を捻っていた　マジで非構造化プログラミングヤバい
-
 [^shiki]: [Shiki.js RISC-Vのシンタックスハイライトあってワロタ](https://github.com/shikijs/shiki/blob/main/docs/languages.md#all-languages)
 
 ```riscv
@@ -135,4 +133,3 @@ int main(char *argv) {
 低レイヤーなソフトウェアのレイヤー感が掴めず<ruby><rb>四苦八苦</rb><rt>SICK&ensp;HACK</rt></ruby>しすぎてきくりお姉さんになった[^sickhack]。結局適当にデフォルト設定でコンパイルしたELF形式の実行ファイルはqemu-system-riscv64にポン置きしても動かないってことでいいんだろうか？
 
 [^sickhack]: この文は筆者が20歳未満で違法に飲酒をしていることを示唆するものではありません.
-

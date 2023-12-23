@@ -4,18 +4,20 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "astro": "^1.8.0",
+    "astro": "^4.0.7",
     "destyle.css": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "18.11.18",
-    "eslint": "8.30.0",
-    "postcss": "^8.4.20",
-    "postcss-preset-env": "^7.8.3",
-    "prettier": "^2.8.1",
-    "typescript": "4.9.4"
+    "@types/node": "20.10.5",
+    "eslint": "8.56.0",
+    "postcss": "^8.4.31",
+    "postcss-preset-env": "^9.1.4",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
+    "typescript": "5.3.3"
   }
 }
