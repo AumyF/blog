@@ -43,6 +43,10 @@ const { title } = Astro.props.frontmatter;
     font-size: 1.5em;
     margin-block: var(--s0);
   }
+  article :global(h3) {
+    font-size: 1.25em;
+    margin-block: var(--s0);
+  }
   article :global(p) {
     margin-block: var(--s0);
     text-align: justify;
@@ -51,7 +55,7 @@ const { title } = Astro.props.frontmatter;
     margin-block: var(--s0);
     border-top: 1px solid var(--border);
   }
-  article :global(ul,ol) {
+  article :global(ul, ol) {
     padding-left: var(--s1);
   }
   article :global(ul) {
