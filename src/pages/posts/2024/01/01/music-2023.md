@@ -257,7 +257,7 @@ tiny yawnがあまりにも刺さったのでライブいくぜ～と思った�
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5elRKwvJgON8V7xlukCI8T?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-ささやき声
+「きみにたりないものをおしえて」っていうのは要するに00:04あたりにある(らしい)超低音を再生できる環境のことらしい
 
 # 秋
 
@@ -349,7 +349,7 @@ Spotifyのレコメンドって本当にものすごいことがあって代表�
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6LxuNFEU3oIZ5ybBdWbZNT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-ギターリフ動画で出てきためちゃくちゃオシャレなフレーズ。
+音楽イベント(NAMM)でほっつき歩いてる人間におまえの好きなギターフレーズ何よ？って訊く動画を古典的ロック多いなあと観ていたらいきなり出てきたベチャオシャレネオソウル。
 
 「Tick Tock」も神リフ。
 
