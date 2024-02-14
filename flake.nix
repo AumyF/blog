@@ -8,7 +8,7 @@
       let pkgs = nixpkgs.legacyPackages.${system}; in
       {
         devShells.default = pkgs.mkShell {
-          buildInputs = with pkgs; [ bun act ];
+          buildInputs = with pkgs; [ bun act nodejs_20 ];
         };
       }
     );
